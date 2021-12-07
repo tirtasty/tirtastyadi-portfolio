@@ -124,3 +124,32 @@ main .logo{
 .contact-section{
     background-color: rgb(146, 230, 230);
 }
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 35px;
+    font-family: var(--body-font);
+    font-size: 15px;
+}
+
+footer p{
+    font-family: var(--header-font);
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.footer-social a{
+    padding-left: 40px;
+    letter-spacing: 3px;
+}
+
+.footer-social a{
+    transition: all 0.3s ease 0s;
+}
+.footer-social a:hover{
+    color: var(--button-hover-colour);
+}
