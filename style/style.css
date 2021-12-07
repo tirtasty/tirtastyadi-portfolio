@@ -5,8 +5,8 @@
     --font-first-colour:#141414;
     --font-second-colour: #edf0f1;
     --hover-colour: #0088a9;
-    --button-colour: rgb(0,136,169,1.4);
-    --button-hover-colour: rgb(0,136,169,0.5);
+    --button-hover-colour: rgb(0,136,169,1.4);
+    --button-colour: rgba(1, 189, 179, 0.5);
 }
 :root{
     /* Typography */
@@ -14,6 +14,7 @@
     --body-font: 'Montserrat Alternates', sans-serif;
 }
 :root{
+    /* MARGIN */
 
 }
 
@@ -29,27 +30,43 @@ html{
 }
 
 body{
-    margin: 0;
+    
 }
-
+/* HEADER */
 header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 17px 10%;
+    padding: 45px 10%;
     min-height: 5vh;
 }
 
 h1{
-    font-family: "Monserrat", sans-serif;
-    font-weight: 200;
-    font-size: 30px;
-    color: #edf0f1;
+    margin-right: auto;
+    font-family: var(--header-font);
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: var(--font-first-colour);
     text-decoration: none;
+    cursor: pointer;
+}
+h1:hover{
+    transition: all 0.3s ease 0s;
+    color: var(--button-hover-colour);
 }
 
+li, a, button {
+    font-family: var(--header-font);
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--font-first-colour);
+    text-decoration: none;
+    list-style: none;
+}
+/* BUTTON NAVIGATION */
 button{
-    padding: 9px 25px;
+    padding: 10px 25px;
     margin-left: 20px;
     background-color: var(--button-colour);
     border: none;
@@ -62,13 +79,48 @@ button:hover{
     color: #080808 ;
 }
 
-#home-button-1{
-    padding: 9px 25px;
-    margin-left: 20px;
-    margin-top: 500px;
-    background-color:pink;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+.nav-link2 li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-link2 li a{
     transition: all 0.3s ease 0s;
+}
+.nav-link2 li a:hover{
+    color: var(--button-hover-colour);
+}
+.contact-bar{
+    padding-left: 20px;
+}
+
+/* MAIN */
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* HOME */
+
+main{
+
+}
+main .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.about-section{
+    background-color: violet;
+}
+.work-section{
+    background-color: yellowgreen;
+}
+.contact-section{
+    background-color: rgb(146, 230, 230);
 }
