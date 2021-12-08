@@ -107,8 +107,6 @@ main .logo{
     height: 500px;
     width: 500px;
     margin-bottom: 200px;
-    border: 200px;
-    border-style: none;
     padding: 25px;
 }
 
@@ -122,17 +120,16 @@ main .logo{
     width: 300px;
 }
 
-.home-section .text-overlay{
-    display: flex;
+.text-overlay{
     position: absolute;
-    background: none;
-    top: 450px;
-    left: 350px;
+    min-width: 55vh;
+    top: 45vh;
+    left: 27.5vh;
+    background:none content-box;
     font-family: var(--header-font);
     font-size: 50px;
     font-weight: 200;
-    width: 1200px;
-    height: 200px;
+    width: 80%;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
