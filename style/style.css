@@ -15,9 +15,7 @@
     --body-font:'Roboto', sans-serif;
     --sub-font:'Montserrat', sans-serif;
 }
-/* :root{} */
-    /* MARGIN */
-
+/* BODY */
     
 *{
     box-sizing: border-box;
@@ -168,7 +166,7 @@ h4{
     font-size: 17.5px;
     font-weight: 400;
     color: var(--second-color);
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     letter-spacing: 2px;
 }
 
@@ -189,8 +187,6 @@ h5{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: none;
-    border-radius: 25px;
 }
 
 .left-contact .contact-content{
@@ -220,7 +216,7 @@ h6{
     font-size: 17.5px;
     font-weight: 400;
     color: var(--second-color);
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     letter-spacing: 2px;
 }
 
