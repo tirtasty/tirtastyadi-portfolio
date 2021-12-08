@@ -1,7 +1,7 @@
 :root{
 /* Colour */
     --first-color: #f8f8f8;
-    --second-color: #29292c;
+    --second-color: #464647;
     --font-first-colour:#141414;
     --font-second-colour: #edf0f1;
     --hover-colour: #0088a9;
@@ -12,13 +12,13 @@
 :root{
     /* Typography */
     --header-font:'Poppins', sans-serif;
-    --body-font: 'Montserrat Alternates', sans-serif;
+    --body-font:'Roboto', sans-serif;
+    --sub-font:'Montserrat', sans-serif;
 }
-:root{
+/* :root{} */
     /* MARGIN */
 
-}
-
+    
 *{
     box-sizing: border-box;
     padding: 0;
@@ -56,7 +56,7 @@ h1{
     font-weight: 350;
     font-size: 25px;
     letter-spacing: 4px;
-    color: var(--font-first-colour);
+    color: var(--second-color);
     text-decoration: none;
     cursor: pointer;
 }
@@ -108,8 +108,8 @@ main .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    max-height: 400px;
+    max-width: 400px;
     margin-bottom: 200px;
     padding: 25px;
 }
@@ -120,12 +120,13 @@ main .logo{
 
 .home-section:hover .logo{
     opacity: 5%;
-    height: 300px;
-    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
 }
 
 .text-overlay{
     position: absolute;
+    flex-wrap: wrap;
     min-width: 50vh;
     top: 45vh;
     left: 20rem;
@@ -143,55 +144,136 @@ main .logo{
 }
 
 
-/* WORK */
-
-
+/* ABOUT */
 
 .about-section{
     background-color: violet;
 }
+
+
+
+
+
+
+/* WORK */
+
 .work-section{
     background-color: yellowgreen;
 }
 
 
 /* CONTACT */
+h4{
+    font-family: var(--header-font);
+    font-size: 17.5px;
+    font-weight: 400;
+    color: var(--second-color);
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
 
+h5{
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--second-color);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
 
+/* LEFT CONTAINER */
 .left-contact{
-    width: 25%;
+    width: 50%;
     height: 800px;
-    margin-left:  200px;
+    margin-left: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background:url(./contactbackground.png)
+    justify-content: space-between;
+    background: none;
     border-radius: 25px;
 }
+
+.left-contact .contact-content{
+    display: block;
+    justify-content: center;
+    font-family: var(--header-font);
+    font-size: 20px;
+    font-weight: 200;
+    background: none;
+}
+.contact-content .phone, .email, .address{
+    padding: 40px;
+    margin: 10px;
+    padding-left: 0;
+    background: none;
+    border: none;
+}
+
+/* RIGHT CONTAINER */
 
 .right-contact{
-    width: 75%;
-    height: 700px;
-    background-color:var(--second-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 25px;
-    margin-left: -100px;
-    transition: all 0.3s ease-in-out;
+    margin-right: 80px;
 }
-.right-contact:hover{
-    box-shadow: 5px 5px 5px var(--second-color);
-    transition: all 0.3s ease-in-out;
-    opacity: 50%;
-
+h6{
+	position: relative;
+	font-family: var(--header-font);
+    font-size: 17.5px;
+    font-weight: 400;
+    color: var(--second-color);
+    margin-bottom: 80px;
+    letter-spacing: 2px;
 }
 
 
+.field{
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 0.5rem;
+	font-size: 1.1rem;
+	margin-bottom: 50px;
+	transition: .3s;
+    border-radius: 10px;
+}
 
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
 
+textarea{
+	min-height: 150px;
+}
 
+.btn{
+	width: 50%;
+	padding: 0.5rem 0.5rem;
+	background-color:var(--hover-colour);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color:var(--button-colour);
+}
+
+.field:focus{
+    border: 2px solid var(--font-first-colour);
+    background-color:var(--first-color);
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
 
 /* FOOTER */
 
@@ -199,14 +281,15 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    padding: 20px 35px;
+    padding: 20px 80px;
     font-family: var(--body-font);
     font-size: 15px;
+    background: none;
 }
 
 footer p{
-    font-family: var(--header-font);
-    font-weight: 200;
+    font-family: var(--body-font);
+    font-weight: 300;
     letter-spacing: 3px;
 }
 
