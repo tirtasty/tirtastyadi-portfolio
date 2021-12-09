@@ -42,7 +42,10 @@ leading you to the contain of it and home display, which if you hover on it it w
 ** If you click "Github" Navigation Button will scrolling down to this page.
 ![Contact and contact me Page](./images/contact.PNG)
 
-** The whole page will be look like this if you keep scrolling around
+** If you scrolling down to this page you will find footer with social link on it.
+![Footer social link and license](./images/footer.PNG)
+
+** The whole page will be look like this if you keep scrolling around.
 ![Whole page of the webpage](./images/webpage.gif)
 
 ---
