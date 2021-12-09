@@ -15,6 +15,12 @@
     --body-font:'Roboto', sans-serif;
     --sub-font:'Montserrat', sans-serif;
 }
+/* test background */
+
+.work-section{
+    background-color: rgb(78, 50, 205);
+}
+
 /* BODY */
     
 *{
@@ -30,8 +36,8 @@ html{
 
 section{
     height: 100vh;
+    width: 100vh;
     width: 90%;
-    max-width: 200vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -57,10 +63,6 @@ h1{
     color: var(--second-color);
     text-decoration: none;
     cursor: pointer;
-}
-h1:hover{
-    transition: all 0.3s ease 0s;
-    color: var(--button-hover-colour);
 }
 
 li, a, button {
@@ -102,6 +104,15 @@ button:hover{
 
 /* HOME */
 
+.home-section{
+    width: 90%;
+    min-width: 500px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
 main .logo{
     display: flex;
     justify-content: center;
@@ -110,10 +121,7 @@ main .logo{
     max-width: 400px;
     margin-bottom: 200px;
     padding: 25px;
-}
-
-.logo{
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .home-section:hover .logo{
@@ -124,17 +132,17 @@ main .logo{
 
 .text-overlay{
     position: absolute;
+    margin-left: -600px;
     flex-wrap: wrap;
-    min-width: 50vh;
     top: 45vh;
-    left: 20rem;
     background:none;
     font-family: var(--header-font);
     font-size: 50px;
     font-weight: 200;
-    width: 80%;
+    width: 50%;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    letter-spacing: 3px;
 }
 
 .home-section:hover .text-overlay{
@@ -145,9 +153,50 @@ main .logo{
 /* ABOUT */
 
 .about-section{
-    background-color: violet;
+    width: 90%;
+    padding: 40px 0;
+    background: none;
+}
+.aboutme-img{
+    height: auto;
+    width: 321px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px var(--second-color);
 }
 
+.right-about{
+    background: transparent;
+}
+.about-me{
+    width: 90%;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-about h3{
+    font-family: var(--header-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--second-color);
+    margin-bottom: 80px;
+    letter-spacing: 3px;
+    margin-left: 210px;
+}
+
+.right-about p{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-family: var(--header-font);
+    font-size: 17.5px;
+    font-weight: 400;
+    color: var(--second-color);
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin:auto;
+}
 
 
 
@@ -155,9 +204,6 @@ main .logo{
 
 /* WORK */
 
-.work-section{
-    background-color: yellowgreen;
-}
 
 
 /* CONTACT */
@@ -166,7 +212,7 @@ h4{
     font-size: 17.5px;
     font-weight: 400;
     color: var(--second-color);
-    margin-bottom: 120px;
+    margin-bottom: 55px;
     letter-spacing: 2px;
 }
 
@@ -187,6 +233,8 @@ h5{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: transparent;
+    margin-bottom: 60px;
 }
 
 .left-contact .contact-content{
@@ -250,7 +298,7 @@ textarea{
 	border: none;
 	outline: none;
 	cursor: pointer;
-	transition: .3s;
+	transition: 0.3s;
 }
 
 .btn:hover{
@@ -300,3 +348,7 @@ footer p{
 .footer-social a:hover{
     color: var(--button-hover-colour);
 }
+
+
+
+/* background test */
