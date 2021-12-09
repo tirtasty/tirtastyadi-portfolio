@@ -99,9 +99,7 @@ button:hover{
     justify-content: center;   
 }
 main .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     max-height: 300px;
     max-width: 300px;
     margin-bottom: 200px;
@@ -139,8 +137,8 @@ main .logo{
 
 .aboutme-img{
     height: auto;
-    width: 321px;
     border-radius: 10px;
+    margin: auto;
 }
 
 .right-about{
