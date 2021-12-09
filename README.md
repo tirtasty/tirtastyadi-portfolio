@@ -27,10 +27,23 @@ https://github.com/tirtasty/tirtastyadi-portfolio.git
 ## Usage
 
 ** On the homepage of the website there are 4(four) button or navigation link which will be 
-leading you to the contain of it.
+leading you to the contain of it and home display, which if you hover on it it will change become a text welcome.
+![Navigation bar](./images/navbar.PNG)
 
+** If you click "About" Navigation Button will lead you to this page.
+![About page](./images/aboutme.PNG)
 
+** If you click "Work" Navigation Button will lead you to this page.
+![Work page](./images/work.PNG)
 
+** If you click "Github" Navigation Button will link to my github account.
+* [Tirta's Gihub Account](https://github.com/tirtasty)
+
+** If you click "Github" Navigation Button will scrolling down to this page.
+![Contact and contact me Page](./images/contact.PNG)
+
+** The whole page will be look like this if you keep scrolling around
+![Whole page of the webpage]()
 
 ---
 ## Contributors
