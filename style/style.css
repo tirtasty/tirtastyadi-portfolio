@@ -352,10 +352,6 @@ footer p{
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 1024px){
-    .text-overlay{
-        width: 50%;
-        margin-left: 0px;
-    }
     .about-section{
         flex-direction: column;
     }
@@ -390,13 +386,14 @@ footer p{
 	.left{
 		height: 200px;
 	}
+    .about-section{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:768px){
-    .text-overlay{
-        width: 50%;
-        margin-left: 50px;
-}
-    .about-section{
+
+    .left-contact{
+        display: block;
         flex-direction: column;
 }
     .about-section .left-about{
@@ -421,10 +418,8 @@ footer p{
     .work-section .card{
         height: 350px;
 }
-    .text-overlay{
-        width: 50%;
-        margin-left: 50px;
-}
+
     .about-section{
         flex-direction: column;
-    }
+}
+}
