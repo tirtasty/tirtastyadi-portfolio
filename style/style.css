@@ -29,7 +29,7 @@ html{
 }
 
 section{
-    height: 100vh;
+    padding: 12.5rem 0;
     width: 100vh;
     width: 90%;
     margin: 0 auto;
@@ -66,7 +66,6 @@ li, a, button {
 /* BUTTON NAVIGATION */
 button{
     padding: 10px 25px;
-    margin-left: 20px;
     background-color: var(--button-colour);
     border: none;
     border-radius: 45px;
@@ -77,6 +76,11 @@ button:hover{
     background-color: var(--button-hover-colour);
     color: #080808 ;
 }
+
+#btn-cnt {
+    margin-left: 20px;
+}
+
 .nav-link2 li{
     display: inline-block;
     padding: 0 20px;
@@ -114,7 +118,7 @@ main .logo{
 .text-overlay{
     position: absolute;
     margin-left: -600px;
-    top: 50vh;
+    top: 32.5vh;
     background:none;
     text-align: center;
     font-family: var(--header-font);
@@ -249,18 +253,17 @@ h4{
 h5{
     font-family: var(--body-font);
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--second-color);
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
 /* LEFT CONTAINER */
 .left-contact{
-    width: 50%;
     margin-left: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: transparent;
     margin-bottom: 60px;
 }
@@ -352,6 +355,25 @@ footer p{
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 1024px){
+    .address {
+        padding: 10px;
+        margin: 10px;
+    }
+    .contact-content {
+        padding: 10px;
+        margin: 10px;
+    }
+    .phone {
+        padding: 10px;
+        margin: 10px;
+    }
+    .email {
+        padding: 10px;
+        margin: 10px;
+    }
+    #contact {
+        display: grid;
+    }
     .about-section{
         flex-direction: column;
     }
@@ -363,6 +385,9 @@ footer p{
         width: 80%;
         font-size: 20px;
          }
+    .right-contact {
+        margin: 0 5rem;
+    }
     .right-about p{
         width: 80%;
         font-size: 15px;
@@ -370,9 +395,6 @@ footer p{
     }
 
     .work-section{
-        margin-top: 25vh;
-        margin-bottom: 15vh;
-        height: 50%;
         width: 100%;
     }
     .work-section .card{
@@ -380,6 +402,12 @@ footer p{
     }
 }
 @media screen and (max-width: 880px){
+
+    .text-overlay {
+        margin-left: -480px;
+        top: 30rem;
+        font-size: 32.5px;
+    }
 	.contact-box{
 		grid-template-columns: 2fr;
 	}
