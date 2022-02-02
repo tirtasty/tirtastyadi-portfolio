@@ -86,6 +86,7 @@ button:hover{
     display: flex;
     justify-content: space-around;
     padding: 2.5rem;
+    background: #c4ecf9;
 }
 
 .nav-link2 li{
@@ -182,7 +183,7 @@ main .logo{
 }
 .card{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     transition: 0.5s ease-in-out;
     background: none;
 }
@@ -305,6 +306,9 @@ footer p{
 #option{
     color: black;
 }
+#option:hover{
+    color: lavenderblush;
+}
 
 .footer-social a{
     padding-left: 40px;
@@ -357,7 +361,9 @@ footer p{
     transition: all .3s;
     background: none;
   }
-  
+#imageProfile{
+    max-height: 32.5rem;
+}
 .github-icon:hover {
     width: 13rem;
   } 
@@ -379,6 +385,9 @@ footer p{
     margin: 2rem;
     gap: 1rem;
   }
+#detailContainer {
+    margin-top: 12rem;
+}
 /* MEDIA QUERY */
 @media screen and (max-width: 1200px){
     #rowContact{
@@ -388,6 +397,9 @@ footer p{
 @media screen and (max-width: 1024px){
     .left-contact{
         margin-left: 52px;
+        display: block;
+    }
+    #detailContainer{
         display: block;
     }
 
@@ -534,7 +546,7 @@ footer p{
         .text-overlay {
             margin-left: -200px;
             font-size: 22.5px;
-            top: 20rem;
+            top: 33rem;
             opacity: 100%;
         }
         .socialMedia{
@@ -546,5 +558,8 @@ footer p{
             width: 6rem;
             justify-self: center;
             margin-bottom: 1.2rem;
+        }
+        .contact-content{
+            padding: 3.8rem;
         }
     }}
