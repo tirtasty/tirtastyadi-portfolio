@@ -36,6 +36,9 @@ section{
     justify-content: center;
     align-items: center;
 }
+p{
+    letter-spacing: 3px;
+}
 /* HEADER */
 header{
     display: flex;
@@ -178,18 +181,26 @@ main .logo{
     justify-content: center;
 }
 .card{
-    width: 500px;
-    height: 700px;
-    padding: 2rem 1rem;
-    position: relative;
     display: flex;
     align-items: flex-end;
     transition: 0.5s ease-in-out;
+    background: none;
 }
 .card:hover{
     transform: translateY(20px);
 }
-.card::before{
+.card-group {
+    padding: 0 2rem;
+    border-radius: 5px;
+}
+.card-group>.card{
+    border: none;
+    
+}
+.card-img-top{
+    cursor: pointer;
+}
+/* .card::before{
     content: "";
     position: absolute;
     top: 0;
@@ -236,8 +247,16 @@ main .logo{
 }
 .githubTxt {
     color: aquamarine;
-}
+} */
 /* CONTACT */
+#secondContact{
+    margin-top: 25px;
+}
+#enquiry-email{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: var(--body-font);
+}
 h4{
     font-family: var(--header-font);
     font-size: 17.5px;
@@ -368,10 +387,19 @@ footer p{
     box-shadow:  var(--hover-colour) 0 0 4px 4px;
     background: none;
   } 
+.github-icon {
+    width: 10rem;
+    transition: all .3s;
+    background: none;
+  }
+  
+.github-icon:hover {
+    width: 13rem;
+  } 
 .resume-icon {
     height: 6rem;
     width: 6rem;
-    margin: 3rem;
+    margin: 2rem 0;
     border-radius: 70px;
     transition: all .3s;
     background: none;
@@ -387,6 +415,11 @@ footer p{
     gap: 1rem;
   }
 /* MEDIA QUERY */
+@media screen and (max-width: 1200px){
+    #rowContact{
+        display: grid;
+        justify-content: space-evenly;
+    }
 @media screen and (max-width: 1024px){
     .left-contact{
         margin-left: 52px;
@@ -492,6 +525,9 @@ footer p{
     .about-section{
         flex-direction: column;
 }
+.footer-icon{
+    margin: 2rem 7px;
+}
 }
 @media screen and (max-width:615px){
     .logo {
@@ -504,7 +540,7 @@ footer p{
         opacity: 100%;
     }}
 
-    @media screen and (max-width:468px){
+@media screen and (max-width:468px){
         .logo {
             display: none;
         }
@@ -514,4 +550,5 @@ footer p{
             top: 20rem;
             opacity: 100%;
         }
-    }
+        
+    }}
