@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Tirta Styadi</title>
     <link rel="shortcut icon" type="image" href="./images/Web head white.png">
 </head>
 <body>
     <!-- HEADER -->
-    <header class="nav-link">
-        <h1 href="#nav-bar">TIRTA STYADI</h1>
+    <header class="nav-link" id="nav-link">
+        <h1 href="#nav-bar" id="nav-logo">TIRTA STYADI</h1>
         <nav class="nav-bar">
             <ul href="#nav-bar" class="nav-link2">
                 <li>
@@ -24,7 +25,7 @@
                     <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="https://github.com/tirtasty">Gitlab</a>
+                    <a href="https://github.com/tirtasty">Github</a>
                 </li>
             </ul>
         </nav>
@@ -57,7 +58,27 @@
         </section>
 
         <!-- WORK -->
-        <section class="work-section" id="work">
+        <div class="card-group" id="work">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top card" src="./images/cryptoMuggles.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                
+              </div>
+            </div>
+          </div>
+        <!-- <section class="work-section" id="work">
             <div class="card">
                 <a href="https://tirtasty.github.io/crypto-muggles/">
                     <img src="./images/cryptoMuggles.png" class="card-2" alt="Image of work section 1st">
@@ -92,27 +113,34 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- CONTACT -->
         <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./images/profileImage.png" alt="Profile Image" id="profileImg">
+                  </div>
+                  
             <div class="left-contact">
                 <div class="contact-content">
-                    <h4>CONTACT</h4>
+                    <h4>MORE</h4>
                     <div class="email">
-                        <h5>Email</h5>
-                        <p>tirta.setiady@yahoo.com</p>
+                        <h5>Resume</h5>
+                        <a href="./images/Tirta_Styadi_-_Pastry_Chef (1).pdf" download="">
+                            <img src="./images/resumeLogo.png" class="resumeLogo resume-icon"
+                    alt="resumeLogo icon">
+                        </a>
+                        <p>Click Icon to Download</p>
                     </div>
                     <div class="address">
                         <h5>Address</h5>
                         <p>Sydney, New South Wales, Australia</p>
-                    </div>
-                                
+                    </div>              
                 </div>
             </div>
-            <div class="right-contact">
-                <img src="./images/profileImage.png" alt="Profile Image" id="profileImg">
-            </div>
+            
 
         </section>
 
@@ -122,14 +150,27 @@
 
     <footer class="footer">
         
-        <div class="footer-social">
-            <a href="https://www.linkedin.com/in/tirta-styadi-045810120/" class="footer-linkedin">LinkedIn</a>
-            <a href="https://twitter.com/GuardiansBoyZ" class="footer-twitter">Twitter</a>
-            <a href="https://www.instagram.com/tirtastyadi/" class="footer-instagram">Instagram</a>
+        <div class="text-center firstFooter">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/tirta-styadi-045810120/">
+                    <img href="" src="./images/linkedIn.png" class="footer-linkedIn footer-icon" alt="linkedin icon">
+                </a><a href="https://twitter.com">
+                    <img href="" src="./images/twitterIcon.png" class="footer-twitter footer-icon" alt="twitter icon">
+                </a><a href="https://www.instagram.com/tirtastyadi/"></a>
+                    <img src="./images/instaIcon.png" class="footer-instagram footer-icon"
+                    alt="instagram icon">
+                </a>
+            </div>
+            <div class="enquiry">
+                <p id="needHelp">CONTACT ME</p>
+                <div class="emailLine firstFooter">
+                    <img src="./images/emailIcon.png" id="email-icon" alt="Email Icon for enquiry">
+                    <p id="enquiry-email">tirta.setiady@yahoo.com</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>© 2021.  TIRTA STYADI</p>
-        </div>
+        <!-- Last line of will be copyrights -->
+        <div class="copyRight"> &copy; 2022 Tirta Styadi</div>
         
     </footer>
 
